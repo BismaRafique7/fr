@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Import Link for navigation
-import './Auth.css'; // CSS file for styling
+import { Link } from 'react-router-dom'; 
+import './Auth.css'; 
 import Header from '../Components/Headar';
 import Footer from '../Components/Footer';
 function Login() {
@@ -10,7 +10,7 @@ function Login() {
   const [newPassword, setNewPassword] = useState('');
   const [isResettingPassword, setIsResettingPassword] = useState(false);
 
-  // Function to handle login
+ 
   const handleLogin = () => {
     axios
       .post('http://localhost:3002/login', { email, password })
@@ -46,7 +46,7 @@ function Login() {
   return (
     <div>
     <Header />
-    <div className="auth-container"> {/* Apply the 'auth-container' class here */}
+    <div className="auth-container"> 
       <h2>{isResettingPassword ? 'Reset Password' : 'Login'}</h2>
       <input
         type="email"

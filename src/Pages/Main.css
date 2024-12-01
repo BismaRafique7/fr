@@ -36,14 +36,11 @@
   text-align: center;
 }
 
-/*.category-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-}*/
+
 .category-card:hover {
   transform: translateY(-8px);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
-  border: 2px solid black; /* Add this line to change the border color on hover */
+  border: 2px solid black; 
 }
 
 .category-link {

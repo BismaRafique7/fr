@@ -32,7 +32,7 @@ const booksData = [
 
 function Wloungewear({ addToCart }) {
   return (
-    <div className="Main"> {/* Use className for React */}
+    <div className="Main"> 
       <Header />
       <Catagory heading="Women Loungewear" books={booksData} addToCart={addToCart}/>
       <Footer />
