@@ -1,62 +1,63 @@
 .auth-container {
     max-width: 500px;
-    margin: 50px auto;
+    margin: 150px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff; 
-    
-}
-
-h2 {
+    background-color: #fff;
+  }
+  
+  h2 {
     text-align: center;
     margin-bottom: 20px;
-    color:'red';
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
+    color: red;
+  }
+  
+  .form-group {
+    margin-bottom: 15px; /* Adds spacing between input fields */
+  }
+  
+  label {
     display: block;
     margin-bottom: 5px;
-    color: #333; 
-}
-
-input {
-    width: 95%;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-
-button {
-    width: 98%;
+    box-sizing: border-box; /* Ensures consistent sizing */
+  }
+  
+  button {
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #e2001a; 
+    background-color: #e2001a;
     color: white;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e2001a; 
-}
-
-p {
+  }
+  
+  button:hover {
+    background-color: #b80017; /* Slightly darker red on hover */
+  }
+  
+  p {
     text-align: center;
-}
-
-a {
-    color: #e2001a; 
+  }
+  
+  a {
+    color: #e2001a;
     text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
+  }
+  

@@ -2,17 +2,17 @@ import React from 'react'
 import Headar from '../Components/Headar';
 import Catagory from '../Components/Catagory';
 import Footer from '../Components/Footer';
-import b from '../Pages/ksimg/2.PNG';
-import c from '../Pages/ksimg/3.PNG';
-import d from '../Pages/ksimg/4.PNG';
-import e from '../Pages/ksimg/5.PNG';
-import f from '../Pages/ksimg/1.PNG';
-import g from '../Pages/ksimg/7.PNG';
-import h from '../Pages/ksimg/8.PNG';
-import i from '../Pages/ksimg/9.PNG';
-import j from '../Pages/ksimg/10.PNG';
-import k from '../Pages/ksimg/11.PNG';
-import l from '../Pages/ksimg/12.PNG';
+import b from '../Pages/images/451-7298-_2.webp';
+import c from '../Pages/images/520-0131_1_545x545.webp';
+import d from '../Pages/images/520-0137_1_545x545.webp';
+import e from '../Pages/images/520-1127-_1_545x545.webp';
+import f from '../Pages/images/520-1140_1_545x545.webp';
+import g from '../Pages/images/520-3137_1_545x545.webp';
+import h from '../Pages/images/520-7136_1_545x545.webp';
+import i from '../Pages/images/520-9131_1_545x545.webp';
+import j from '../Pages/images/528-9846-_1_545x545.webp';
+import k from '../Pages/images/551-9228-_1_545x545.webp';
+import l from '../Pages/images/551-9676-_1.webp';
 
 
 const booksData = [

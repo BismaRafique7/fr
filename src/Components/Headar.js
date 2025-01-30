@@ -37,7 +37,7 @@ function Header() {
       {/* Navigation Bar */}
       <nav className="bottom-header">
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/Home">Home</Link></li>
           <li><Link to="/men">MEN</Link></li>
           <li><Link to="/women">WOMEN</Link></li>
           <li><Link to="/kids">KIDS</Link></li>

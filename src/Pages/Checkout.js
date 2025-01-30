@@ -29,7 +29,7 @@ function Checkout() {
   // Fetch all orders
   const fetchOrders = async () => {
     try {
-      const response = await fetch('http://localhost:3003/orders');
+      const response = await fetch('http://localhost:3001/orders');
       if (response.ok) {
         const data = await response.json();
         setOrders(data.orders);
@@ -44,7 +44,7 @@ function Checkout() {
   // Handle cancel order
   const handleCancelOrder = async (orderId) => {
     try {
-      const response = await fetch(`http://localhost:3003/orders/${orderId}`, {
+      const response = await fetch(`http://localhost:3001/orders/${orderId}`, {
         method: 'DELETE',
       });
 
@@ -74,7 +74,7 @@ function Checkout() {
     };
 
     try {
-      const response = await fetch('http://localhost:3003/checkout', {
+      const response = await fetch('http://localhost:3001/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(orderDetails),

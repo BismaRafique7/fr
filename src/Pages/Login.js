@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; 
-import './Auth.css'; 
-import Header from '../Components/Headar';
-import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
+import './Auth.css';
+
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [isResettingPassword, setIsResettingPassword] = useState(false);
 
- 
   const handleLogin = () => {
     axios
-      .post('http://localhost:3002/login', { email, password })
+      .post('http://localhost:3001/login', { email, password })
       .then((result) => {
         if (result.data.success) {
           alert('Login successful!');
@@ -26,10 +24,9 @@ function Login() {
       .catch((err) => console.log(err));
   };
 
-  // Function to handle password reset
   const handlePasswordReset = () => {
     axios
-      .post('http://localhost:3002/reset-password', { email, newPassword })
+      .post('http://localhost:3001/reset-password', { email, newPassword })
       .then((result) => {
         if (result.data.success) {
           alert('Password updated successfully!');
@@ -44,27 +41,32 @@ function Login() {
   };
 
   return (
-    <div>
-    <Header />
-    <div className="auth-container"> 
+    <div className="auth-container">
       <h2>{isResettingPassword ? 'Reset Password' : 'Login'}</h2>
-      <input
-        type="email"
-        placeholder="Enter email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
+      <div className="form-group">
+        <label>Email</label>
+        <input
+          type="email"
+          placeholder="Enter email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
       {!isResettingPassword ? (
         <>
-          <input
-            type="password"
-            placeholder="Enter password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              placeholder="Enter password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          <Link to="/Home">
           <button type="button" onClick={handleLogin}>
-            Login
-          </button>
+            Login 
+          </button></Link>
           <p onClick={() => setIsResettingPassword(true)}>Forgot Password?</p>
           <p>
             Don’t have an account? <Link to="/register">Register</Link>
@@ -72,12 +74,15 @@ function Login() {
         </>
       ) : (
         <>
-          <input
-            type="password"
-            placeholder="Enter new password"
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-          />
+          <div className="form-group">
+            <label>New Password</label>
+            <input
+              type="password"
+              placeholder="Enter new password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+            />
+          </div>
           <button type="button" onClick={handlePasswordReset}>
             Reset Password
           </button>
@@ -85,8 +90,6 @@ function Login() {
         </>
       )}
     </div>
-    <Footer />
-  </div>
   );
 }
 
