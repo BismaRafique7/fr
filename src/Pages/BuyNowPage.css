@@ -1,0 +1,31 @@
+/* BuyNowPage.css */
+.buy-now-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .book-image {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+  }
+  
+  .proceed-checkout {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e2001a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .proceed-checkout:hover {
+    background-color: #e2001a;
+  }
+  

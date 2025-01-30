@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Titles */
+.men-shoes-section h2,
+.women-shoes-section h2,
+.kids-shoes-section h2,
+.slider-section h2,
+.reviews-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+h2{
+    margin: 0px;
+}
+
+.men-shoes-section {
+    margin: 30px;
+    display: inline-block;
+}
+
+.women-shoes-section {
+    margin: 30px;
+    display: inline-block;
+}
+
+.kids-shoes-section {
+    margin: 30px;
+    display: inline-block;
+}
+
+.abc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Shoe Sections */
+.shoe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.shoe-item {
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shoe-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.shoe-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.shoe-item img:hover {
+    transform: scale(1.1);
+}
+
+.slider-section {
+    position: relative; 
+    width: 1000%;
+    max-width: 90%;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    width: 100%;
+    
+}
+
+.slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.slide img {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Updated Buttons */
+.prev,
+.next {
+    display: inline-block;
+    width: 30px;
+}
+
+.prev {
+    left: -50px; /* Adjust placement relative to slider container */
+    
+}
+
+.next {
+    margin-left: 1139px;
+    right: -50px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgb(255, 0, 0);
+    transform: scale(1.1);
+}
+
+
+/* Image Gallery Section */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gallery-item {
+    width: 8%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Reviews Section */
+.reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.review-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.customer-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.rating {
+    font-size: 18px;
+    color: #f39c12;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .shoe-list {
+        flex-direction: column;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 80%;
+    }
+
+    .reviews-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slider-section {
+        margin-top: 20px;
+    }
+
+    .prev {
+        left: -40px; /* Adjust for smaller screens */
+    }
+
+    .next {
+        right: -40px; /* Adjust for smaller screens */
+    }
+}

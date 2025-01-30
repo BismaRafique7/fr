@@ -1,0 +1,49 @@
+/* Category.css */
+
+.kids-container {
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center the container */
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff; /* Changed to white for a cleaner look */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+  display: inline-block;
+}
+
+.kids-heading {
+  font-size: 28px; /* Larger heading font size */
+  margin-bottom: 25px; /* Increased space below heading */
+  color: #444; /* Slightly darker text color */
+  text-align: center; /* Center the heading */
+}
+
+.link-container {
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space links evenly */
+  margin: 30px 0; /* Increased space above and below the links */
+}
+
+.category-link {
+  background-color: #e2001a; /* Changed link background color to green */
+  color: white; /* Text color */
+  padding: 12px 24px; /* Increased padding for links */
+  border-radius: 6px; /* More rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Larger font size */
+  transition: background-color 0.3s, transform 0.3s; /* Added transform transition */
+  flex: 1; /* Allow each link to grow equally */
+  margin: 0 10px; /* Space between links */
+  max-width: calc(50% - 10px); /* Limit width to fit two items in a row */
+}
+.category-link img {
+  width: 270px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Ensures images maintain their aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  margin-bottom: 10px; /* Adds spacing below the image */
+}
+
+.category-link:hover {
+  background-color: #e2001a; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}

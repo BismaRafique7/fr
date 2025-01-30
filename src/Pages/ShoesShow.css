@@ -1,0 +1,26 @@
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box {
+    width: calc(20% - 8px); 
+    margin: 5px;
+    text-align: center;
+}
+
+.product-box img {
+    max-width: 100%;
+}
+
+.price {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
